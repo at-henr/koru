@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koru | Gestão de Rotina, Hábitos e Crescimento com Gamificação</title>
 
-    <!-- METATAGS DE SEO E OTIMIZAÇÃO DE BUSCA -->
+    <link rel="icon" type="image/png" href="rotina.png">
+
     <meta name="description" content="Koru é o app de produtividade com gamificação que transforma suas tarefas em hábitos. Alcance o próximo nível com XP, Metas Diárias e sincronização Firebase.">
     <meta name="keywords" content="Koru, produtividade, hábitos, gamificação, rotina, tarefas, firebase, xp, android, app">
     <link rel="canonical" href="[SUA URL AQUI]" />
 
-    <!-- METATAGS DE COMPARTILHAMENTO (OPEN GRAPH / TWITTER CARDS) -->
-    <!-- Simula o uso da imagem rotina.png para a prévia -->
+
     <meta property="og:title" content="Koru: Cresça a Cada Dia. Domine Sua Rotina.">
     <meta property="og:description" content="Koru é o app de produtividade com gamificação que transforma suas tarefas em hábitos. Alcance o próximo nível com XP, Metas Diárias e sincronização Firebase.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="[SUA URL AQUI]">
-    <meta property="og:image" content="https://placehold.co/1200x630/10b981/ffffff?text=Koru%20|%20rotina.png"> <!-- Placeholder para rotina.png -->
+    <meta property="og:image" content="https://placehold.co/1200x630/10b981/ffffff?text=Koru%20|%20rotina.png"> 
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
@@ -25,17 +25,15 @@
     <meta name="twitter:creator" content="@SeuHandleTwitter">
     <meta name="twitter:image" content="https://placehold.co/1200x630/10b981/ffffff?text=Koru%20|%20rotina.png">
 
-    <!-- Carregamento do Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuração do Tailwind para cores e fontes -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'koru-green': '#10b981', // Emerald green, remete ao crescimento
-                        'koru-dark': '#0f172a',  // Slate 900
-                        'koru-light': '#f1f5f9', // Slate 100
+                        'koru-green': '#10b981', 
+                        'koru-dark': '#0f172a',  
+                        'koru-light': '#f1f5f9', 
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -45,20 +43,16 @@
         }
     </script>
     <style>
-        /* Define a fonte Inter (se não estiver disponível, usa sans-serif) */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         
-        /* Estilo básico de scroll para ser mais suave */
         html {
             scroll-behavior: smooth;
         }
 
-        /* Hero section com gradiente sutil */
         .hero-background {
             background: linear-gradient(180deg, rgba(15, 23, 42, 1) 0%, rgba(30, 41, 59, 1) 100%);
         }
 
-        /* Estilo para simular o ícone Koru (espiral) - MANTIDO para referência visual */
         .koru-icon {
             display: inline-block;
             width: 1.5rem;
@@ -73,17 +67,14 @@
 </head>
 <body class="bg-white text-koru-dark font-sans antialiased">
 
-    <!-- Seção de Cabeçalho (Header) -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo - Agora usando a imagem rotina.png -->
                 <a href="#" class="flex items-center space-x-2">
                     <img src="rotina.png" alt="Logo Koru" class="w-8 h-8 rounded-full shadow-md">
                     <span class="text-2xl font-bold text-koru-dark">Koru</span>
                 </a>
                 
-                <!-- Navegação (Desktop) -->
                 <nav class="hidden md:flex space-x-8 text-koru-dark font-medium">
                     <a href="#recursos" class="hover:text-koru-green transition duration-150 ease-in-out">Recursos</a>
                     <a href="#gamificacao" class="hover:text-koru-green transition duration-150 ease-in-out">Gamificação</a>
@@ -91,7 +82,6 @@
                     <a href="#apoio" class="hover:text-koru-green transition duration-150 ease-in-out">Apoio</a>
                 </nav>
 
-                <!-- Botão Principal -->
                 <a href="#download" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-koru-green hover:bg-emerald-600 transition duration-150 ease-in-out shadow-lg">
                     Baixe Agora
                 </a>
@@ -99,7 +89,6 @@
         </div>
     </header>
 
-    <!-- Seção Hero (Destaque Principal) -->
     <section class="hero-background text-white pt-20 pb-28 sm:pt-32 sm:pb-40 rounded-b-[40px] shadow-2xl">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
@@ -108,16 +97,22 @@
             <p class="text-xl sm:text-2xl font-light mb-8 max-w-3xl mx-auto opacity-80">
                 Koru é a sua ferramenta para transformar tarefas em hábitos e medir seu progresso com gamificação (XP e Níveis).
             </p>
-            <a id="download" href="#" class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-lg text-koru-dark bg-koru-green hover:bg-emerald-300 transition duration-150 ease-in-out shadow-xl transform hover:scale-105">
-                Comece Sua Jornada (Download)
+            
+            <a id="download" href="https://github.com/at-henr/koru/releases/download/1.3/koru-release.1.3.1.apk"
+               class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-lg text-koru-dark bg-koru-green hover:bg-emerald-300 transition duration-150 ease-in-out shadow-xl transform hover:scale-105"
+               target="_blank" rel="noopener noreferrer">
+                Baixar APK (Android)
             </a>
-            <div class="mt-12 text-sm opacity-60">
-                Disponível para Android.
+            
+            <div class="mt-4 text-lg text-yellow-300 font-medium">
+                Em breve na Google Play Store!
             </div>
             
-            <!-- Placeholder Visual (Mockup de celular) -->
+            <div class="mt-12 text-sm opacity-60">
+                Instale agora via APK para acesso imediato à versão Beta.
+            </div>
+            
             <div class="mt-16 flex justify-center">
-                <!-- Imagem do logo no mockup (para simular a marca) -->
                 <div class="relative bg-koru-dark w-60 h-96 rounded-3xl shadow-2xl border-4 border-gray-600">
                     <div class="absolute inset-0 p-3 flex flex-col items-center justify-center space-y-4">
                         <img src="rotina.png" alt="Logo Koru no App" class="w-12 h-12 rounded-full mb-4">
@@ -132,7 +127,6 @@
         </div>
     </section>
 
-    <!-- Seção de Recursos (Features) -->
     <section id="recursos" class="py-20 bg-koru-light">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-12 text-koru-dark">
@@ -140,21 +134,18 @@
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1: Gestão Inteligente (Hábitos, Repetição e Promoção) -->
                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out border border-gray-100">
                     <div class="text-4xl text-koru-green mb-4">🔄</div>
                     <h3 class="text-xl font-semibold mb-3">Gestão Inteligente de Rotina</h3>
                     <p class="text-gray-600">Crie, agende e monitore hábitos diários. Tarefas com repetição são automaticamente promovidas a Hábitos, simplificando sua organização.</p>
                 </div>
                 
-                <!-- Card 2: Interação e UX (Voz e Gestos) -->
                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out border border-gray-100">
                     <div class="text-4xl text-koru-green mb-4">🗣️</div>
                     <h3 class="text-xl font-semibold mb-3">Comandos de Voz e Gestos</h3>
                     <p class="text-gray-600">Crie novas tarefas usando sua voz ('Criar tarefa [Nome] às [Horário]'). Use gestos de deslizar (swipe) para concluir ou excluir tarefas rapidamente.</p>
                 </div>
 
-                <!-- Card 3: Dados e Foco -->
                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out border border-gray-100">
                     <div class="text-4xl text-koru-green mb-4">☁️</div>
                     <h3 class="text-xl font-semibold mb-3">Sincronização e Foco</h3>
@@ -171,7 +162,6 @@
         </div>
     </section>
 
-    <!-- Seção de Gamificação (XP/Nível) -->
     <section id="gamificacao" class="py-20 bg-koru-dark text-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold mb-4">
@@ -182,7 +172,6 @@
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-                <!-- Gamificação - XP -->
                 <div class="bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-700">
                     <div class="flex items-center mb-3">
                         <span class="text-4xl mr-4">⭐</span>
@@ -191,7 +180,6 @@
                     <p class="text-gray-300">Conclua suas metas para ganhar XP (Pontos de Experiência). Há um **cooldown** de 2 horas para Tarefas e 24 horas para Metas de Hábitos, incentivando a consistência e prevenindo abusos.</p>
                 </div>
                 
-                <!-- Gamificação - Nível -->
                 <div class="bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-700">
                     <div class="flex items-center mb-3">
                         <span class="text-4xl mr-4">📈</span>
@@ -203,7 +191,6 @@
         </div>
     </section>
 
-    <!-- Seção Filosofia Koru -->
     <section id="filosofia" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold mb-4 text-koru-green">
@@ -232,59 +219,64 @@
         </div>
     </section>
 
-    <!-- Seção de Apoio e Desenvolvedores -->
     <section id="apoio" class="py-16 bg-koru-light">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 
-                <!-- Apoio e Monetização -->
                 <div>
                     <h3 class="text-2xl font-bold mb-4 text-koru-dark">
                         Apoio e Sustentabilidade
                     </h3>
                     <p class="text-gray-600 mb-4">
-                        O Koru é um projeto independente. Utilizamos **Anúncios (Google AdMob - Adaptive Banners)** para cobrir os custos operacionais (servidores Firebase) e manter o aplicativo gratuito e em desenvolvimento contínuo.
+                        O Koru é um projeto independente. Utilizamos Anúncios (Google AdMob - Adaptive Banners) para cobrir os custos operacionais e manter o aplicativo gratuito e em desenvolvimento contínuo.
                     </p>
                     <p class="text-gray-600 mb-6 font-semibold">
                         Sua doação opcional é fundamental para acelerar a implementação de novos recursos.
                     </p>
                     <a href="https://pag.ae/81eUweScM" target="_blank" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-pink-500 hover:bg-pink-600 transition duration-150 ease-in-out shadow-lg transform hover:scale-[1.02]">
-                        Apoiar com Doação (PagSeguro)
+                        Apoiar com Doação Pix
                     </a>
                 </div>
 
-                <!-- Desenvolvedores -->
                 <div>
                     <h3 class="text-2xl font-bold mb-4 text-koru-dark">
                         Conheça os Criadores
                     </h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 mr-3 text-koru-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                            <span class="font-medium text-gray-700">Henrique Martins</span> - 
-                            <a href="https://www.instagram.com/iag0martins/" target="_blank" class="text-blue-500 hover:underline ml-1">@iag0martins</a>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 mr-3 text-koru-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                            <span class="font-medium text-gray-700">Yuri Ferreira</span> - 
-                            <a href="https://www.instagram.com/yuri_mendesf/" target="_blank" class="text-blue-500 hover:underline ml-1">@yuri_mendesf</a>
-                        </li>
-                    </ul>
+                    <div class="space-y-3">
+                        <a href="https://www.instagram.com/iag0martins/" target="_blank" class="block p-4 rounded-xl shadow-lg bg-white hover:bg-gray-100 transition duration-300 transform hover:translate-y-[-2px] border border-gray-200">
+                            <div class="flex items-center space-x-4">
+                                <svg class="w-8 h-8 text-koru-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                                <div>
+                                    <span class="block text-lg font-semibold text-koru-dark">Henrique Martins</span>
+                                    <span class="block text-sm text-gray-500">Instagram: @iag0martins</span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/yuri_mendesf/" target="_blank" class="block p-4 rounded-xl shadow-lg bg-white hover:bg-gray-100 transition duration-300 transform hover:translate-y-[-2px] border border-gray-200">
+                            <div class="flex items-center space-x-4">
+                                <svg class="w-8 h-8 text-koru-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                                <div>
+                                    <span class="block text-lg font-semibold text-koru-dark">Yuri Ferreira</span>
+                                    <span class="block text-sm text-gray-500">Instagram: @yuri_mendesf</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Rodapé (Footer) -->
     <footer class="bg-koru-dark text-white py-8">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-sm text-gray-400 mb-2">
                 &copy; 2025 Koru. Todos os direitos reservados.
             </p>
             <p class="text-xs text-gray-500">
-                Versão Beta: 1.2
+                Versão: 1.3
             </p>
         </div>
     </footer>
