@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koru | Gestão de Rotina, Hábitos e Crescimento</title>
+    <title>Koru | Gestão de Rotina, Hábitos e Crescimento com Gamificação</title>
+
+    <!-- METATAGS DE SEO E OTIMIZAÇÃO DE BUSCA -->
+    <meta name="description" content="Koru é o app de produtividade com gamificação que transforma suas tarefas em hábitos. Alcance o próximo nível com XP, Metas Diárias e sincronização Firebase.">
+    <meta name="keywords" content="Koru, produtividade, hábitos, gamificação, rotina, tarefas, firebase, xp, android, app">
+    <link rel="canonical" href="[SUA URL AQUI]" />
+
+    <!-- METATAGS DE COMPARTILHAMENTO (OPEN GRAPH / TWITTER CARDS) -->
+    <!-- Simula o uso da imagem rotina.png para a prévia -->
+    <meta property="og:title" content="Koru: Cresça a Cada Dia. Domine Sua Rotina.">
+    <meta property="og:description" content="Koru é o app de produtividade com gamificação que transforma suas tarefas em hábitos. Alcance o próximo nível com XP, Metas Diárias e sincronização Firebase.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[SUA URL AQUI]">
+    <meta property="og:image" content="https://placehold.co/1200x630/10b981/ffffff?text=Koru%20|%20rotina.png"> <!-- Placeholder para rotina.png -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SeuHandleTwitter">
+    <meta name="twitter:creator" content="@SeuHandleTwitter">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/10b981/ffffff?text=Koru%20|%20rotina.png">
+
     <!-- Carregamento do Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configuração do Tailwind para cores e fontes -->
@@ -37,7 +58,7 @@
             background: linear-gradient(180deg, rgba(15, 23, 42, 1) 0%, rgba(30, 41, 59, 1) 100%);
         }
 
-        /* Estilo para simular o ícone Koru (espiral) */
+        /* Estilo para simular o ícone Koru (espiral) - MANTIDO para referência visual */
         .koru-icon {
             display: inline-block;
             width: 1.5rem;
@@ -56,9 +77,9 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
+                <!-- Logo - Agora usando a imagem rotina.png -->
                 <a href="#" class="flex items-center space-x-2">
-                    <div class="koru-icon bg-koru-green border-koru-green"></div>
+                    <img src="rotina.png" alt="Logo Koru" class="w-8 h-8 rounded-full shadow-md">
                     <span class="text-2xl font-bold text-koru-dark">Koru</span>
                 </a>
                 
@@ -96,13 +117,12 @@
             
             <!-- Placeholder Visual (Mockup de celular) -->
             <div class="mt-16 flex justify-center">
-                <!-- Ícone de celular representando o app -->
+                <!-- Imagem do logo no mockup (para simular a marca) -->
                 <div class="relative bg-koru-dark w-60 h-96 rounded-3xl shadow-2xl border-4 border-gray-600">
                     <div class="absolute inset-0 p-3 flex flex-col items-center justify-center space-y-4">
+                        <img src="rotina.png" alt="Logo Koru no App" class="w-12 h-12 rounded-full mb-4">
                         <span class="text-koru-green text-3xl font-bold">Koru App</span>
-                        <div class="w-16 h-2 bg-gray-700 rounded-full"></div>
                         <div class="w-40 h-4 bg-koru-green rounded-md animate-pulse"></div>
-                        <div class="w-40 h-2 bg-gray-500 rounded-md"></div>
                         <div class="w-40 h-2 bg-gray-500 rounded-md"></div>
                         <div class="w-40 h-2 bg-gray-500 rounded-md"></div>
                         <div class="mt-8 text-xs text-gray-400">Nível 3 | 120 XP</div>
