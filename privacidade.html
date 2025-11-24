@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koru | Política de Privacidade</title>
+
+    <link rel="icon" type="image/png" href="rotina.png">
+
+    <meta name="description" content="Política de Privacidade do aplicativo Koru - Gestão de Rotina, Hábitos e Crescimento com Gamificação.">
+    <link rel="canonical" href="https://koru.pages.dev/privacidade" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4NX01NGQ7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J4NX01NGQ7');
+    </script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?cient=ca-pub-7089294329164823"
+      crossorigin="anonymous"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBnJLbrJX3oxXl0A4CxycJMBug6IJDXqrQ",
+            authDomain: "koru-a1238.firebaseapp.com",
+            projectId: "koru-a1238",
+            storageBucket: "koru-a1238.firebasestorage.app",
+            messagingSenderId: "163108774846",
+            appId: "1:163108774846:web:d9104f16c76feb9f14cfef",
+            measurementId: "G-J4NX01NGQ7"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'koru-green': '#10b981', 
+                        'koru-dark': '#0f172a',  
+                        'koru-light': '#f1f5f9', 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-background {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 1) 0%, rgba(30, 41, 59, 1) 100%);
+        }
+        /* Estilos de prevenção de inspeção de código e AdBlock foram removidos desta página, 
+           pois a política de privacidade deve ser acessível. Se necessário, reintroduza-os
+           no final do <head> do arquivo original. */
+    </style>
+</head>
+<body class="bg-koru-light text-koru-dark font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="rotina.png" alt="Logo Koru" class="w-8 h-8 rounded-full shadow-md">
+                    <span class="text-2xl font-bold text-koru-dark">Koru</span>
+                </a>
+                
+                <nav class="hidden md:flex space-x-8 text-koru-dark font-medium">
+                    <a href="/" class="hover:text-koru-green transition duration-150 ease-in-out">Voltar para o Início</a>
+                </nav>
+
+                <a href="https://github.com/at-henr/koru/releases/download/1.4/koru-release-1.4.1.apk" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-koru-green hover:bg-emerald-600 transition duration-150 ease-in-out shadow-lg">
+                    Baixe Agora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-white py-16 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-koru-dark mb-4">
+                Política de Privacidade
+            </h1>
+            <p class="text-lg text-gray-600">
+                Transparência no uso dos seus dados, garantindo a segurança e o seu crescimento.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-gray-700 leading-relaxed">
+
+            <p class="text-sm font-semibold text-koru-green">
+                Última Atualização: Novembro de 2025
+            </p>
+
+            <p>
+                Esta Política de Privacidade descreve como o Projeto Koru (o "Aplicativo" ou "Nós"), voltado para a gestão de rotina e hábitos com gamificação, coleta, usa, armazena e protege os dados pessoais dos usuários ("Você" ou "Titular").
+                Ao utilizar o Aplicativo Koru e seus serviços associados, você concorda com o tratamento dos seus dados conforme detalhado abaixo.
+            </p>
+
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2">
+                    1. Dados Pessoais Coletados e Finalidade
+                </h2>
+                
+                <h3 class="text-xl font-semibold text-koru-green mt-4 mb-2">
+                    1.1 Dados Coletados pelo Aplicativo (Firebase)
+                </h3>
+                <p>
+                    Para permitir a sincronização dos seus dados em nuvem e a funcionalidade de Gamificação (XP e Níveis), utilizamos o Google Firebase. Os dados coletados incluem:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li>Dados de Autenticação: Credenciais de login (ex: e-mail e senha criptografada) se você optar por criar uma conta no Firebase para salvar seu progresso.</li>
+                    <li>Dados do Usuário Koru: Seu XP (Pontos de Experiência), Nível, Tarefas, Hábitos, Metas Diárias e Histórico de Conclusão.</li>
+                    <li>Finalidade: Garantir que seu progresso (Gamificação) e rotina sejam salvos, sincronizados entre dispositivos e protegidos contra perda.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-koru-green mt-4 mb-2">
+                    1.2 Dados de Uso e Navegação (Google Analytics)
+                </h3>
+                <p>
+                    Utilizamos o Google Analytics para entender como os usuários interagem com o Aplicativo e o site. Estes dados são anonimizados e incluem:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li>Endereço IP (anonimizado), localização geográfica aproximada.</li>
+                    <li>Informações do dispositivo (tipo, sistema operacional, versão do App).</li>
+                    <li>Eventos de uso dentro do App (ex: número de tarefas criadas, telas visitadas).</li>
+                    <li>Finalidade: Análise estatística para melhoria contínua do Aplicativo (identificar bugs, entender recursos mais usados).</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2">
+                    2. Publicidade e Monetização (AdMob)
+                </h2>
+                <p>
+                    O Projeto Koru é mantido por meio de anúncios. Utilizamos o Google AdMob para exibir anúncios (banners adaptativos), conforme mencionado na seção "Apoio e Sustentabilidade" do nosso site.
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li>O AdMob pode coletar e utilizar identificadores exclusivos do seu dispositivo e outras informações para personalizar os anúncios que você visualiza.</li>
+                    <li>O Aplicativo Koru não acessa ou armazena os dados de personalização de anúncios. O tratamento é feito diretamente pelo Google.</li>
+                    <li>Você pode gerenciar suas preferências de anúncios nas configurações do seu dispositivo Android.</li>
+                    <li>Finalidade: Cobrir custos operacionais (servidores Firebase, desenvolvimento) e manter o Aplicativo gratuito.</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2">
+                    3. Comandos de Voz e Gestos
+                </h2>
+                <p>
+                    O recurso de Comandos de Voz ("Criar tarefa [Nome]...") utiliza a API de reconhecimento de voz padrão do sistema operacional Android.
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li>O Projeto Koru não armazena nenhuma gravação de áudio ou texto falado em nossos servidores.</li>
+                    <li>O processamento do áudio para texto é realizado localmente no seu dispositivo ou via serviços do Google no seu dispositivo, e apenas o texto final da tarefa é salvo no Firebase (conforme a seção 1.1).</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2">
+                    4. Compartilhamento e Proteção de Dados
+                </h2>
+                <p>
+                    Seus dados pessoais (XP, Hábitos, Tarefas) não são vendidos ou alugados a terceiros. O compartilhamento ocorre estritamente com os serviços de terceiros essenciais para o funcionamento do App:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li>Google Firebase: Para sincronização e armazenamento em nuvem dos dados do App.</li>
+                    <li>Google Analytics: Para análise anônima de desempenho e uso.</li>
+                    <li>Google AdMob: Para exibição de anúncios.</li>
+                    <li>Obrigações Legais: Se exigido por lei ou ordem judicial.</li>
+                </ul>
+                <p class="mt-4">
+                    Adotamos medidas de segurança padrão do mercado, incluindo a criptografia (SSL/TLS) para comunicação com o Firebase, a fim de proteger seus dados contra acesso não autorizado.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2">
+                    5. Seus Direitos (LGPD)
+                </h2>
+                <p>
+                    Você pode exercer seus direitos de acesso, correção, eliminação e portabilidade dos dados, entrando em contato conosco pelo e-mail fornecido abaixo. Seus dados de tarefas e hábitos podem ser eliminados diretamente excluindo sua conta no Aplicativo Koru.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2">
+                    6. Contato e Dúvidas
+                </h2>
+                <p>
+                    Para qualquer dúvida sobre esta política ou sobre o tratamento de seus dados, entre em contato:
+                </p>
+                <p class="font-semibold mt-2">
+                    E-mail: <a href="mailto:seu-email-suporte@koru.pages.dev" class="text-koru-green hover:underline">suporte@koru.pages.dev</a> 
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-koru-dark text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-400 mb-2">
+                &copy; 2025 Koru. Todos os direitos reservados.
+            </p>
+            <p class="text-xs text-gray-500">
+                Política de Privacidade | Versão: 1.4
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
