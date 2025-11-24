@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koru | Exclusão de Contas</title>
+
+    <link rel="icon" type="image/png" href="rotina.png">
+
+    <meta name="description" content="Instruções e Política de Exclusão de Contas do Koru. Saiba como remover seus dados, XP e histórico de hábitos permanentemente.">
+    <link rel="canonical" href="https://koru.pages.dev/exclusao-conta" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4NX01NGQ7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J4NX01NGQ7');
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'koru-green': '#10b981', 
+                        'koru-dark': '#0f172a',  
+                        'koru-light': '#f1f5f9', 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-background {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 1) 0%, rgba(30, 41, 59, 1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-koru-light text-koru-dark font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="rotina.png" alt="Logo Koru" class="w-8 h-8 rounded-full shadow-md">
+                    <span class="text-2xl font-bold text-koru-dark">Koru</span>
+                </a>
+                
+                <nav class="hidden md:flex space-x-8 text-koru-dark font-medium">
+                    <a href="/" class="hover:text-koru-green transition duration-150 ease-in-out">Início</a>
+                    <a href="/privacidade.html" class="hover:text-koru-green transition duration-150 ease-in-out">Privacidade</a>
+                </nav>
+
+                <a href="https://github.com/at-henr/koru/releases/download/1.4/koru-release-1.4.1.apk" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-koru-green hover:bg-emerald-600 transition duration-150 ease-in-out shadow-lg">
+                    Baixe Agora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-white py-16 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-red-600 mb-4">
+                Exclusão de Conta e Dados
+            </h1>
+            <p class="text-lg text-gray-600">
+                Se você deseja encerrar sua jornada no Koru, siga as instruções abaixo para remover seus dados permanentemente.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 text-gray-700 leading-relaxed">
+
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2 flex items-center">
+                    <span class="text-3xl mr-3 text-koru-green">1.</span> Como Solicitar a Exclusão?
+                </h2>
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-red-100 space-y-4">
+                    <p>
+                        A exclusão da sua conta Koru e de todos os dados associados (XP, Níveis, Histórico de Hábitos e Tarefas) deve ser solicitada por meio do seu e-mail de cadastro.
+                    </p>
+                    <p class="p-4 bg-red-50 text-red-800 border border-red-200 rounded-md font-medium">
+                        🚨  Importante: A solicitação deve ser enviada do mesmo endereço de e-mail que você usou para registrar sua conta no Koru (Firebase).
+                    </p>
+                    
+                    <p class="text-lg font-semibold text-koru-dark pt-2">
+                        Passos para Exclusão:
+                    </p>
+                    <ol class="list-decimal list-inside ml-4 space-y-2">
+                        <li>Envie um e-mail para o nosso canal de suporte.</li>
+                        <li>No campo Assunto, utilize: SOLICITAÇÃO DE EXCLUSÃO DE CONTA KORU.</li>
+                        <li>No corpo da mensagem, confirme o seu nome de usuário ou e-mail de registro e declare que você deseja a exclusão permanente de todos os seus dados.</li>
+                    </ol>
+
+                    <p class="text-xl font-bold text-center pt-4">
+                        E-mail para Solicitação:
+                        <a href="mailto:suporte@koru.pages.dev" class="block mt-2 text-koru-green hover:underline bg-koru-light p-3 rounded-lg border border-koru-green">
+                            suporte@koru.pages.dev
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2 flex items-center">
+                    <span class="text-3xl mr-3 text-koru-green">2.</span> Consequências da Exclusão
+                </h2>
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 space-y-4">
+                    <p>
+                        Uma vez processada, a exclusão da sua conta Koru é irreversível. Você perderá o acesso a:
+                    </p>
+                    <ul class="list-disc list-inside ml-4 space-y-2 text-red-700 font-medium">
+                        <li>Seu histórico completo de Hábitos e Tarefas.</li>
+                        <li>Seu progresso de Gamificação (XP, Níveis, Títulos).</li>
+                        <li>Todos os dados salvos em nuvem (Firebase).</li>
+                    </ul>
+                    <p>
+                        Seus dados serão removidos dos servidores do Firebase em até 7 dias úteis após a confirmação da sua solicitação. Apenas dados anônimos de uso (Google Analytics) e informações que somos legalmente obrigados a manter (se houver, como registros fiscais de doações) não serão excluídos.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-koru-dark mb-4 border-b pb-2 flex items-center">
+                    <span class="text-3xl mr-3 text-koru-green">3.</span> Dúvidas e Suporte
+                </h2>
+                <p>
+                    Caso tenha dúvidas sobre o processo ou precise de assistência, entre em contato. Recomendamos que, antes de excluir permanentemente, você tente entrar em contato conosco para resolver quaisquer problemas que possa estar enfrentando com o aplicativo.
+                </p>
+                <a href="mailto:suporte@koru.pages.dev" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-koru-green hover:bg-emerald-600 transition duration-150 ease-in-out shadow-lg mt-4">
+                    Falar com o Suporte Koru
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-koru-dark text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-400 mb-2">
+                &copy; 2025 Koru. Todos os direitos reservados.
+            </p>
+            <p class="text-xs text-gray-500">
+                Exclusão de Contas | Versão: 1.0
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
