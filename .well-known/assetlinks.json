@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rmn.rotina",
+      "sha256_cert_fingerprints": [
+        "1A:B1:B1:22:D7:F7:DF:A3:31:3C:E3:F8:CA:97:C0:DF:F6:44:4A:D3:FC:BF:39:F0:8A:D0:AF:65:26:F7:78:6A"
+      ]
+    }
+  }
+]
